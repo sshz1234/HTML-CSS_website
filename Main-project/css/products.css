@@ -1,0 +1,224 @@
+/** General Styling **/
+html{scroll-behavior: smooth;}
+.f-row header{
+    background-color: blueviolet;
+}
+body{
+    margin: 0px;
+    background-color: #8ebef5;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Montserrat', sans-serif;
+}
+
+p,a,li{
+    font-family: 'Lato', sans-serif;
+    font-size: 1.2em;
+    text-decoration: none;
+}
+/** Prepare our Custom Font **/
+@font-face {
+    /*name our font*/
+    font-family: lessonFont;
+    /*link our font file*/
+    src: url("../fonts/UrbanJungleDEMO.otf");
+}
+/** Global Classes & ID's **/
+.f-row{display:flex;}
+.g-row{display:grid;}
+.sec{grid-template-columns: repeat(3,1fr);} 
+.lesson-row{
+    min-height:200px;
+    align-items: center;
+    padding: 2% 5%;
+}
+/** Main Header **/
+header{
+    width:auto;
+    height: 110px;
+    background-color: #f8f8f8;
+    align-items: center;
+}
+header div{
+    width: auto;
+    height: 100px;
+    flex-grow: 1;
+}
+header img{
+    width: auto;
+    height: 100%;
+}
+header menu{
+    list-style: none;
+    margin: 0px;
+}
+header li{
+    padding: 0px 10px;
+}
+header > nav > menu > li > a{
+    color: #0e0e0e;
+}
+/** Main Masthead **/
+.main-masthead{
+    width:auto;
+    height: 30vh;
+    /* background-image: url("../imgs/bg-1.gif"); */
+    background-size: cover;
+    background-position: center;
+}
+
+#mainp p{
+    text-align: center;
+    background-color: #002f49;
+    border-radius: 15px;
+    text-indent: 50px;
+    /* background-image: linear-gradient(to top, rgb(0, 47, 73,0), rgb(0, 47, 73,1)); */
+     /* background-image: radial-gradient(rgb(0, 47, 73,0), rgb(0, 47, 73,1));  */
+    margin-left: 10px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    color: #f8f8f8;
+    width: 20%;
+    text-shadow: 4px 4px 3px #0e0e0e;
+    /* border-color:#ff0000; */
+}
+.title{
+    background-color: rgba(221, 66, 252, 0.301);
+    align-items: center;
+    justify-content: center;
+   
+       
+}
+.title h1 {
+    font-size: 2.1em;
+    color: #f8f8f8;
+    text-shadow: 4px 4px 3px #0e0e0e;
+    letter-spacing: 4.5px;
+    font-family: "Tajawal", sans-serif;
+}
+.title p{
+
+}
+.main-mask p{
+    font-size: 1.5em;
+    color: #f8f8f8;
+    text-shadow: 4px 4px 3px #0e0e0e;
+    letter-spacing: 4.5px;
+    font-family: lessonFont;
+}
+/** Row One **/
+#lesson-row-one{
+    text-align:center;
+}
+
+#lesson-row-one h2{
+    font-size: 2.5em;
+    color:#0e0e0e;
+    letter-spacing: 1.5px;
+}
+/** Row Two **/
+#color > div:first-child,
+#color > div:last-child{
+    grid-template-columns: 50% 50%;
+}
+#color h3{
+    font-size: 2.5em;
+}
+#color > div:first-child,
+#color > div:last-child{
+    align-items: center;
+    justify-content: center;
+    min-height: 300px;
+}
+section:nth-child(3) > div {
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    min-height: 350px;
+}
+section:nth-child(2) > div:nth-child(odd){
+    background-color: #0092bf;
+    color:#f8f8f8
+}
+section:nth-child(2) > div:nth-child(even){
+    background-color: #ffdbbd;
+    color:#000000
+}
+#color > div:first-child > div:nth-child(1){
+    background-color: #ffa500;
+    color: #ffff00;
+}
+#color > div:first-child > div:nth-child(2){
+    background-color: #003049;
+    color: #eae2b7;
+}
+#color > div:first-child > div:nth-child(1){
+background-image: url("../img/typo-1.jpg");
+background-size: cover;
+}
+#color > div:first-child > div:nth-child(2){
+    background-image: url("../img/typo-1.jpg");
+    background-size: cover;
+}
+#color > div:first-child > div:nth-child(2) h3{
+    width:100%;
+    height:100%;
+    align-items: center;
+    justify-content: center;
+    margin: 0px;
+    background-color: rgba(0,48,73,.3);
+    color: #f8f8f8;
+    text-shadow: 4px 4px 3px #0e0e0e;
+}
+/** Row Three **/
+#letter-lesson-row{
+    grid-template-columns: 50%,50%;
+}
+#letter-lesson-row div,
+#spacing-lesson-row div{
+    padding: 15px;
+}
+#letter-lesson-row div:nth-child(1) h3{
+    font-size: 2.5em;
+    font-kerning: none;
+}
+#letter-lesson-row div:nth-child(1) p{
+    font-kerning: normal;
+}
+#letter-lesson-row div:nth-child(2) h3{
+    font-size: 2.5em;
+    font-kerning: 1.25px;
+}
+#lesson-row-one p::first-line{
+    font-weight: 900;
+}
+#lesson-row-one p::first-letter{
+    font-family: lessonFont;
+    font-size: 2em;
+    color:#d62828;
+}
+h4{
+    font-size: 1.5em;
+}
+.footer{
+    background-color: #f8f8f8;
+}
+.footer a{
+    font-size: 0.8em;
+}
+
+.footer li{
+    display: inline;
+    margin-right: 10px;
+}
+.center{
+    text-align: left;
+}
+.floating-shoe{
+    justify-content: center;
+    width:400px;
+}
